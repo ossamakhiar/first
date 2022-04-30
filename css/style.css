@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ::selection{
+    color: #006599;
+    background: white;
+} */
+body{
+    color: #373a3c;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+/* ====== SIDEBAR STYLE ====== */
+.sidebar {
+    background-color: #006599;
+    height: 100vh;
+    width: 28%;
+    float: left;
+    color: white;
+    text-align: center;
+    position: fixed;
+}
+
+.side-header{
+    margin-top: 40px;
+}
+
+.side-header h1{
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.side-list{
+    list-style-type: none;
+}
+
+.side-list li{
+    margin: 30px;
+}
+
+.side-list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.side-list li a:hover, .side-list .active{
+    color : #f4ef5e;
+    font-size: 25px;
+}
+
+/* ====== CONTENT STYLE ====== */
+/* .content {
+    background: black;
+} */
+
+.content{
+    margin-left: 28%;
+}
+
+.content .content-header img{
+    width: 100%;
+}
+
+.content .content-welcome{
+    margin: 50px;
+}
+
+.content .content-welcome h2{
+    font-weight: 400;
+    color: #006599;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content .content-welcome p{
+    font-size: 20px;
+    line-height: 2 ;
+}
+
+
+
+.content .content-about{
+    margin: 50px;
+}
+
+.content-about-image{
+    float: left;
+    margin-right: 50px;
+    margin-top: 37px;
+    width: 300px;
+}
+
+.content-about-image > img{
+    width: 100%;
+}
+
+.content-about-info > h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.content-about-info p{
+    font-size: 20px;
+    line-height: 2 ;
+}
+
+.content-about-info a{
+    text-decoration: none;
+    background: #006599;
+    padding: 15px 50px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.content-about-info a:hover{
+    background-color: #2790c6;
+}
+
+
+
+
+
+
+/*=====================================FIRST GALLERY ===================================*/
+.first-gallery{
+    margin: 50px;
+}
+
+.first-gallery h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.first-gallery .first-gallery-column{
+    float: left;
+    width: 20%;
+    padding: 4px;
+}
+
+.first-gallery .first-gallery-column img{
+    width: 100%;
+}
+
+
+/* ======================================SECOND GALLERY=============================== */
+.second-gallery{
+    margin: 50px;
+}
+
+.second-gallery h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.second-gallery .second-gallery-column{
+    float: left;
+    width: calc(100%/3);
+    padding: 4px;
+}
+
+.second-gallery .second-gallery-column img{
+    width: 100%;
+}
+
+
+/* ======================================THIRD GALLERY=============================== */
+.third-gallery{
+    margin: 50px;
+}
+
+.third-gallery h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.third-gallery .third-gallery-column{
+    float: left;
+    width: calc(100%/4);
+    padding: 4px;
+}
+
+.third-gallery .third-gallery-column img{
+    width: 100%;
+}
+
+/*==================================================CONTACT============================================*/
+.content-contact{
+    margin: 50px;
+}
+.content-contact h3{
+    font-weight: 400;
+    color: #006599;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.content-contact .contact-form{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.contact-form .form-group{
+    margin-bottom: 10px;
+}
+
+.content-contact input{
+    height: 45px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #0a6697;
+    outline: 0;
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 3px;
+    color: #55595c;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #4286ab;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #66afe9;
+}
+
+.contact-form button{
+    text-decoration: none;
+    background: #006599;
+    padding: 15px 50px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #2790c6;
+}
+
+
+
+
+
+/*
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-link{
+    text-align: center;
+    float: none;
+}
+
+.nav-link a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+}
+.nav-link a:hover{
+    background-color: #111; 
+    color: rgb(105, 104, 0);
+}
+
+.active{
+    background-color: #111;
+}*/
